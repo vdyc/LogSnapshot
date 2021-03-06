@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1350</width>
+    <height>389</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>15</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_6">
+     <item>
+      <widget class="QComboBox" name="comboBox_matrix_name">
+       <property name="minimumSize">
+        <size>
+         <width>200</width>
+         <height>0</height>
+        </size>
+       </property>
+       <item>
+        <property name="text">
+         <string>Default Matrix</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_remove">
+       <property name="text">
+        <string>DEL</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_new_name">
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="placeholderText">
+        <string>Set new condition name here</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_add">
+       <property name="text">
+        <string>Add</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QComboBox" name="cb_00"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="maximumSize">
+        <size>
+         <width>15</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string> &amp; </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_01"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="maximumSize">
+        <size>
+         <width>15</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string> &amp; </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_02"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_5">
+       <property name="maximumSize">
+        <size>
+         <width>15</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string> &amp; </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_03"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="maximumSize">
+        <size>
+         <width>15</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string> &amp; </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_04"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="maximumSize">
+        <size>
+         <width>15</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string> &amp; </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_05"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_6">
+       <property name="minimumSize">
+        <size>
+         <width>35</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>35</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>  OR  </string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QComboBox" name="cb_10"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_7">
+       <property name="maximumSize">
+        <size>
+         <width>15</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string> &amp; </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_11"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_8">
+       <property name="maximumSize">
+        <size>
+         <width>15</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string> &amp; </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_12"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_9">
+       <property name="maximumSize">
+        <size>
+         <width>15</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string> &amp; </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_13"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_10">
+       <property name="maximumSize">
+        <size>
+         <width>15</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string> &amp; </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_14"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_11">
+       <property name="maximumSize">
+        <size>
+         <width>15</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string> &amp; </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_15"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_12">
+       <property name="minimumSize">
+        <size>
+         <width>35</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>35</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>  OR  </string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QComboBox" name="cb_20"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_13">
+       <property name="maximumSize">
+        <size>
+         <width>15</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string> &amp; </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_21"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_14">
+       <property name="maximumSize">
+        <size>
+         <width>15</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string> &amp; </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_22"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_15">
+       <property name="maximumSize">
+        <size>
+         <width>15</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string> &amp; </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_23"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_16">
+       <property name="maximumSize">
+        <size>
+         <width>15</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string> &amp; </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_24"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_17">
+       <property name="maximumSize">
+        <size>
+         <width>15</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string> &amp; </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_25"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_18">
+       <property name="minimumSize">
+        <size>
+         <width>35</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>35</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>  OR  </string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QComboBox" name="cb_30"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_19">
+       <property name="maximumSize">
+        <size>
+         <width>15</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string> &amp; </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_31"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_20">
+       <property name="maximumSize">
+        <size>
+         <width>15</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string> &amp; </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_32"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_21">
+       <property name="maximumSize">
+        <size>
+         <width>15</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string> &amp; </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_33"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_22">
+       <property name="maximumSize">
+        <size>
+         <width>15</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string> &amp; </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_34"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_23">
+       <property name="maximumSize">
+        <size>
+         <width>15</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string> &amp; </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_35"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_24">
+       <property name="minimumSize">
+        <size>
+         <width>35</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>35</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>  OR  </string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_5">
+     <item>
+      <widget class="QComboBox" name="cb_40"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_25">
+       <property name="maximumSize">
+        <size>
+         <width>15</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string> &amp; </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_41"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_26">
+       <property name="maximumSize">
+        <size>
+         <width>15</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string> &amp; </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_42"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_27">
+       <property name="maximumSize">
+        <size>
+         <width>15</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string> &amp; </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_43"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_28">
+       <property name="maximumSize">
+        <size>
+         <width>15</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string> &amp; </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_44"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_29">
+       <property name="maximumSize">
+        <size>
+         <width>15</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string> &amp; </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_45"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_30">
+       <property name="minimumSize">
+        <size>
+         <width>35</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>35</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>  OR  </string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox_ok">
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>comboBox_matrix_name</tabstop>
+  <tabstop>pushButton_remove</tabstop>
+  <tabstop>lineEdit_new_name</tabstop>
+  <tabstop>pushButton_add</tabstop>
+  <tabstop>cb_00</tabstop>
+  <tabstop>cb_01</tabstop>
+  <tabstop>cb_02</tabstop>
+  <tabstop>cb_03</tabstop>
+  <tabstop>cb_04</tabstop>
+  <tabstop>cb_05</tabstop>
+  <tabstop>cb_10</tabstop>
+  <tabstop>cb_11</tabstop>
+  <tabstop>cb_12</tabstop>
+  <tabstop>cb_13</tabstop>
+  <tabstop>cb_14</tabstop>
+  <tabstop>cb_15</tabstop>
+  <tabstop>cb_20</tabstop>
+  <tabstop>cb_21</tabstop>
+  <tabstop>cb_22</tabstop>
+  <tabstop>cb_23</tabstop>
+  <tabstop>cb_24</tabstop>
+  <tabstop>cb_25</tabstop>
+  <tabstop>cb_30</tabstop>
+  <tabstop>cb_31</tabstop>
+  <tabstop>cb_32</tabstop>
+  <tabstop>cb_33</tabstop>
+  <tabstop>cb_34</tabstop>
+  <tabstop>cb_35</tabstop>
+  <tabstop>cb_40</tabstop>
+  <tabstop>cb_41</tabstop>
+  <tabstop>cb_42</tabstop>
+  <tabstop>cb_43</tabstop>
+  <tabstop>cb_44</tabstop>
+  <tabstop>cb_45</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
