@@ -1,3 +1,3 @@
-PyQt5==5.15.1
-matplotlib==3.3.2
-tzlocal==1.5.1
+PyQt5==5.15.3
+matplotlib==3.3.4
+DateTime==4.3
