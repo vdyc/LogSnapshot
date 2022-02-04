@@ -6,89 +6,174 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1074</width>
-    <height>861</height>
+    <width>1263</width>
+    <height>849</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QVBoxLayout" name="verticalLayout">
-    <item>
-     <layout class="QHBoxLayout" name="horizontalLayout_3">
-      <item>
-       <widget class="QLineEdit" name="lineEdit_pid_filter">
-        <property name="placeholderText">
-         <string>PID/TID filter Delimiter: &quot;:,;&quot; or space</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <spacer name="horizontalSpacer">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item>
-       <widget class="QPushButton" name="pushButton_time_format">
-        <property name="text">
-         <string>Orig</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="pushButton_range">
-        <property name="text">
-         <string>Range</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="pushButton_tag">
-        <property name="text">
-         <string>Tag</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QComboBox" name="comboBox_debug_level">
-        <property name="placeholderText">
-         <string>Debug</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </item>
-    <item>
-     <widget class="QTableView" name="tableView_main_log"/>
-    </item>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <layout class="QVBoxLayout" name="ctrlwdgVertLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
     <item>
      <widget class="QSplitter" name="splitter">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
       <property name="orientation">
        <enum>Qt::Vertical</enum>
       </property>
-      <widget class="QTabWidget" name="tabWidget_bottom">
-       <property name="currentIndex">
-        <number>0</number>
+      <property name="handleWidth">
+       <number>1</number>
+      </property>
+      <widget class="QTabWidget" name="tabWidgetUp">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
        </property>
        <widget class="QWidget" name="tab">
         <attribute name="title">
-         <string>Filter</string>
+         <string>Tab 1</string>
+        </attribute>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QTableView" name="tableView">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>300</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_2">
+        <attribute name="title">
+         <string>Tab 2</string>
+        </attribute>
+       </widget>
+      </widget>
+      <widget class="QTabWidget" name="tabWidgetDown">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="tab_d_filter">
+        <attribute name="title">
+         <string>Tab 1</string>
         </attribute>
         <layout class="QHBoxLayout" name="horizontalLayout">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
          <item>
-          <widget class="QTreeView" name="treeView_filter"/>
-         </item>
-         <item>
-          <layout class="QVBoxLayout" name="verticalLayout_2">
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Log File</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="Line" name="line">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pbTimestampFmt">
+             <property name="text">
+              <string>Timestamp</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="cbLogLevel"/>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pbConditionCombo">
+             <property name="text">
+              <string>Condition</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="Line" name="line_3">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
            <item>
             <spacer name="verticalSpacer">
              <property name="orientation">
@@ -103,14 +188,17 @@
             </spacer>
            </item>
            <item>
-            <widget class="QPushButton" name="pushButton_open_filter">
+            <widget class="QComboBox" name="cbFileFormat"/>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pbLogOpen">
              <property name="text">
               <string>Open</string>
              </property>
             </widget>
            </item>
            <item>
-            <widget class="QPushButton" name="pushButton_save_filter">
+            <widget class="QPushButton" name="pbLogSave">
              <property name="text">
               <string>Save</string>
              </property>
@@ -118,18 +206,46 @@
            </item>
           </layout>
          </item>
-        </layout>
-       </widget>
-       <widget class="QWidget" name="tab_2">
-        <attribute name="title">
-         <string>Report</string>
-        </attribute>
-        <layout class="QHBoxLayout" name="horizontalLayout_2">
          <item>
-          <widget class="QTreeView" name="treeView_report"/>
+          <widget class="QTreeWidget" name="treeWidget">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>200</height>
+            </size>
+           </property>
+           <column>
+            <property name="text">
+             <string notr="true">1</string>
+            </property>
+           </column>
+          </widget>
          </item>
          <item>
-          <layout class="QVBoxLayout" name="verticalLayout_3">
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QLabel" name="label_2">
+             <property name="text">
+              <string>Filter</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="Line" name="line_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
            <item>
             <spacer name="verticalSpacer_2">
              <property name="orientation">
@@ -144,77 +260,39 @@
             </spacer>
            </item>
            <item>
-            <widget class="QPushButton" name="pushButton_report_generate">
+            <widget class="QPushButton" name="pbFilterReset">
              <property name="text">
-              <string>Generate</string>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </item>
-        </layout>
-       </widget>
-       <widget class="QWidget" name="sub">
-        <attribute name="title">
-         <string>2nd Log</string>
-        </attribute>
-        <layout class="QHBoxLayout" name="horizontalLayout_4">
-         <item>
-          <widget class="QTableView" name="tableView_sub_log"/>
-         </item>
-         <item>
-          <layout class="QVBoxLayout" name="verticalLayout_4">
-           <item>
-            <spacer name="verticalSpacer_3">
-             <property name="orientation">
-              <enum>Qt::Vertical</enum>
-             </property>
-             <property name="sizeHint" stdset="0">
-              <size>
-               <width>20</width>
-               <height>40</height>
-              </size>
-             </property>
-            </spacer>
-           </item>
-           <item>
-            <widget class="QPushButton" name="pushButton_3">
-             <property name="text">
-              <string>Sync</string>
+              <string>Reset</string>
              </property>
             </widget>
            </item>
            <item>
-            <widget class="QPushButton" name="pushButton_sub_log_open">
+            <widget class="QPushButton" name="pbFilterOpen">
              <property name="text">
               <string>Open</string>
              </property>
             </widget>
            </item>
+           <item>
+            <widget class="QPushButton" name="pbFilterSave">
+             <property name="text">
+              <string>Save</string>
+             </property>
+            </widget>
+           </item>
           </layout>
          </item>
         </layout>
+       </widget>
+       <widget class="QWidget" name="tab_4">
+        <attribute name="title">
+         <string>Tab 2</string>
+        </attribute>
        </widget>
       </widget>
      </widget>
     </item>
    </layout>
-  </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>1074</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <widget class="QMenu" name="menuOpen">
-    <property name="title">
-     <string>Open</string>
-    </property>
-   </widget>
-   <addaction name="menuOpen"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
